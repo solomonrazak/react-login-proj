@@ -10,7 +10,7 @@ function App() {
 
   const [token, setToken] = useState()
 
-  if(!token){
+  if(!token){ // if token is not set return Login
     return <Login setToken={setToken}/>
   }
 

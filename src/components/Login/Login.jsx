@@ -1,7 +1,7 @@
 import React from 'react';
 import './Login.css';
 
-const Login = () => {
+const Login = ({setToken}) => {
   return (
     <div>
         <h1>Please Log In</h1>
@@ -20,6 +20,9 @@ const Login = () => {
   </form>
   </div>
   )
+}
+Login.propTypes = {
+  setToken: propTypes.func.isRequired
 }
 
 export default Login;
