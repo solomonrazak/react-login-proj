@@ -5,10 +5,18 @@ import Preferences from './components/Preferences/Preferences';
 import Login from './components/Login/Login';
 import { Routes, Route } from 'react-router-dom';
 
+function setToken(userToken) {
+}
+
+function getToken() {
+}
+
 function App() {
   const [count, setCount] = useState(0)
 
   const [token, setToken] = useState()
+
+  
 
   if(!token){ // if token is not set return Login
     return <Login setToken={setToken}/>
